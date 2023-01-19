@@ -24,7 +24,7 @@ public class TimeControl extends Control{
     public void izvrsiAkciju(VideoPlayer videoPlayer) {
         double trenutnoVreme = videoPlayer.getTrenutnoVreme();
         if (isPremotaj()) {
-            trenutnoVreme = trenutnoVreme + 15;
+          trenutnoVreme = trenutnoVreme + 15;
             if (trenutnoVreme > videoPlayer.getDuzinaVidea()) {
                 trenutnoVreme = videoPlayer.getDuzinaVidea();
             }
