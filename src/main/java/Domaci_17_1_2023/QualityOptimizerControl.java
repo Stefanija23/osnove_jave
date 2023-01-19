@@ -22,8 +22,7 @@ public class QualityOptimizerControl extends Control{
     }
 
     @Override
-    public double izvrsiAkciju(VideoPlayer videoPlayer) {
-        return brzinaInterneta * 10.1;
+    public void izvrsiAkciju(VideoPlayer videoPlayer) {
 
     }
 }

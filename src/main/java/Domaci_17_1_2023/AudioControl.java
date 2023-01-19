@@ -22,7 +22,7 @@ public class AudioControl extends Control{
     }
 
     @Override
-    public double izvrsiAkciju(VideoPlayer videoPlayer) {
+    public void izvrsiAkciju(VideoPlayer videoPlayer) {
       double jacina = videoPlayer.getJacina();
       if (isPojacaj()) {
           jacina = jacina + 1;
@@ -36,6 +36,5 @@ public class AudioControl extends Control{
           }
       }
       videoPlayer.setJacina(jacina);
-      return jacina;
     }
 }

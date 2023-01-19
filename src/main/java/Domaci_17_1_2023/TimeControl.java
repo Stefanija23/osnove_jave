@@ -21,7 +21,7 @@ public class TimeControl extends Control{
     }
 
     @Override
-    public double izvrsiAkciju(VideoPlayer videoPlayer) {
+    public void izvrsiAkciju(VideoPlayer videoPlayer) {
         double trenutnoVreme = videoPlayer.getTrenutnoVreme();
         if (isPremotaj()) {
             trenutnoVreme = trenutnoVreme + 15;
@@ -36,6 +36,5 @@ public class TimeControl extends Control{
             }
         }
         videoPlayer.setTrenutnoVreme(trenutnoVreme);
-        return trenutnoVreme;
     }
 }
